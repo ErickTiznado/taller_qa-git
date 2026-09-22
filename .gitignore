@@ -1,0 +1,20 @@
+# Notas del facilitador — contienen el spoiler del bug plantado.
+# NO subir al repo del taller.
+NOTAS-FACILITADOR.md
+
+# Índice local de Atlas
+.atlas/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Por si alguien agrega herramientas más adelante
+node_modules/
+dist/

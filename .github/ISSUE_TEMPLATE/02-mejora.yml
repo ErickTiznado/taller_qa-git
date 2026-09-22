@@ -1,0 +1,39 @@
+name: Mejora o funcionalidad
+description: Algo que la app debería hacer y todavía no hace
+title: "[MEJORA] "
+labels: ["mejora"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué problema resuelve
+      description: Empezá por la necesidad, no por la solución. Quién se traba hoy, y con qué.
+    validations:
+      required: true
+
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: Qué debería pasar. Concreto.
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Cómo sabemos que está terminado. Verificables, no opiniones.
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false

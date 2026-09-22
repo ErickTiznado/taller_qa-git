@@ -1,0 +1,74 @@
+name: Reporte de bug
+description: Algo no funciona como debería
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Un buen reporte se mide por una sola cosa: ¿otra persona puede reproducirlo
+        leyéndolo? Si sí, ya hiciste la mitad del arreglo.
+
+  - type: textarea
+    id: resumen
+    attributes:
+      label: Qué pasa
+      description: Una o dos frases. Sin interpretación todavía.
+      placeholder: El contador del pie muestra un número que no coincide con las filas en pantalla.
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducir
+      description: Numerados, desde un estado conocido. Alguien debería poder seguirlos sin preguntarte nada.
+      value: |
+        1. Abrir la app con las tareas de ejemplo cargadas
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: obtenido
+    attributes:
+      label: Resultado obtenido
+      description: Lo que efectivamente pasó. Pegá el texto exacto o una captura.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidad
+    attributes:
+      label: Severidad
+      options:
+        - Bloqueante — no se puede usar la app
+        - Alta — funcionalidad principal rota
+        - Media — molesta pero hay forma de seguir
+        - Baja — cosmético
+    validations:
+      required: true
+
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno
+      placeholder: "Chrome 141 / Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Notas adicionales
+      description: Errores de consola, capturas, cuándo empezó a pasar.
+    validations:
+      required: false
